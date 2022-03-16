@@ -1,0 +1,271 @@
+body {
+    /*border-left: 3px solid black;
+    border-bottom: 3px solid black;*/
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #site {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas: "head head contact contact" "head head about about" "social social social social" "exp exp exp pro" "exp exp exp per" "educ educ educ educ" "hobby hobby hobby lang" "foot foot foot foot";
+    width: 70%;
+    margin: auto;
+  }
+  
+  /* global */
+  .highlight {
+    color: #ffa200;
+  }
+  
+  p {
+    color: whitesmoke;
+  }
+  
+  .listItem {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: "left right";
+  }
+  
+  .listItem .head {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 15px;
+    grid-area: left;
+  }
+  
+  .listItem .p {
+    color: #b1b1b1;
+    grid-area: right;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* header */
+  header {
+    grid-area: head;
+    background: linear-gradient(to right, #4e4e4e 0%, #393939 100%);
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "pic name" "pic job";
+    grid-column-gap: 20px;
+  }
+  
+  header img {
+    grid-area: pic;
+    border-radius: 90%;
+  }
+  
+  header h2 {
+    font-size: 50px;
+  }
+  
+  header p {
+    font-size: 20px;
+  }
+  
+  /* contacts */
+  .contacts {
+    grid-area: contact;
+    background: linear-gradient(to right, #393939 0%, #242424 100%);
+    color: white;
+    padding: 5%;
+  }
+  
+  /* about me */
+  .aboutMe {
+    grid-area: about;
+    background: linear-gradient(to right, #393939 0%, #242424 100%);
+    color: white;
+    padding: 5%;
+  }
+  
+  .aboutMe p {
+    color: #b1b1b1;
+  }
+  
+  /* socials */
+  .socials {
+    grid-area: social;
+    background: linear-gradient(to right, #4e4e4e 0%, #242424 100%);
+  }
+  
+  .socials ul li {
+    list-style: none;
+    display: inline;
+    color: whitesmoke;
+  }
+  
+  .socials ul li a {
+    text-decoration: none;
+    color: #b1b1b1;
+  }
+  
+  .socials .fab, .socials i {
+    color: whitesmoke;
+  }
+  
+  /* experience */
+  .experience {
+    grid-area: exp;
+  }
+  
+  .experience .listItem .head {
+    padding-right: 15%;
+    text-align: right;
+    font-size: 120%;
+    color: blue;
+  }
+  
+  .experience .listItem .head .desc {
+    color: black;
+  }
+  
+  .experience .listItem p {
+    color: black;
+  }
+  
+  .experience .listItem p span {
+    font-weight: bold;
+  }
+  
+  /* PRO SKILLS */
+  .proSkills {
+    grid-area: pro;
+    background-color: #00a2ff;
+    padding: 5%;
+  }
+  
+  .counter {
+    grid-area: right;
+    padding: 18px;
+  }
+  
+  .bar {
+    height: 7px;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+  
+  .statusBar {
+    background-color: white;
+    height: 100%;
+    width: 90%;
+  }
+  
+  .percentage {
+    display: none;
+    position: relative;
+    font-size: 90%;
+    width: 40px;
+    background-color: gainsboro;
+    border-radius: 10%;
+  }
+  
+  /* per skills */
+  .perSkills {
+    grid-area: per;
+    background-color: #fcff3f;
+    color: black;
+    padding: 5%;
+  }
+  
+  .perSkills .listItem h2 {
+    color: inherit;
+  }
+  
+  /* education */
+  .education {
+    grid-area: educ;
+    background-color: #c9c9c9;
+    padding: 5%;
+  }
+  
+  .education .listItem .head {
+    padding-right: 15%;
+    text-align: right;
+    font-size: 120%;
+    color: blue;
+  }
+  
+  .education .listItem .head .desc {
+    color: black;
+  }
+  
+  .education .listItem p {
+    color: black;
+  }
+  
+  .education .listItem p span {
+    font-weight: bold;
+  }
+  
+  /* hobbies */
+  .hobbies {
+    grid-area: hobby;
+    padding: 5%;
+  }
+  
+  .hobbyIcons {
+    display: block;
+    width: 100%;
+  }
+  
+  .hobbyIcons ul {
+    width: 100%;
+  }
+  
+  .hobbyIcons ul li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+  
+  .hobbyIcons ul li i {
+    font-size: 200%;
+  }
+  
+  .hobbyIcons ul li span {
+    font-size: 90%;
+    color: #333333;
+  }
+  
+  /* language */
+  .language {
+    grid-area: lang;
+    background-color: #e9e9e9;
+    padding: 5%;
+  }
+  
+  .language .head {
+    color: black;
+  }
+  
+  .language .statusBar {
+    background-color: black;
+  }
+  
+  /* footer */
+  footer {
+    grid-area: foot;
+    background-color: #ffa200;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }/*# sourceMappingURL=style.css.map */

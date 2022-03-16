@@ -1,0 +1,125 @@
+* {
+  font-family: poppins;
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  width: 100%;
+  margin: auto;
+}
+
+:root {
+  --primary: rgb(233, 22, 22);
+  --light: white;
+  --dark: rgb(15, 15, 15);
+  --bg1: rgb(204, 21, 21);
+  --bg2: rgb(252, 247, 247);
+  --bg3: rgb(15, 15, 15);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.m-n {
+  margin: 2rem 0;
+}
+
+.lead {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+span.caption {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.img-control {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.me-3 {
+  margin-right: 1rem;
+  color: var(--primary);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.25fr 3fr;
+  grid-template-areas: "left right";
+}
+
+.left-panel {
+  background-color: var(--bg3);
+  padding: 3rem;
+  color: var(--light);
+}
+.left-panel .image {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.left-panel h1.name {
+  font-size: 3rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  color: var(--primary);
+}
+.left-panel h2.whatiam {
+  font-weight: 300;
+}
+.left-panel .side-header {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.left-panel .contact-info .item {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-panel {
+  background-color: var(--bg2);
+  padding: 3rem;
+}
+.right-panel .article {
+  padding: 2rem 0;
+}
+.right-panel .article h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.right-panel .article__container {
+  width: 100%;
+}
+.right-panel .article__container table {
+  border: 2px var(--light) solid;
+  border-radius: 0.4rem;
+  text-align: left;
+}
+.right-panel .article__container table thead {
+  background-color: var(--bg3);
+}
+.right-panel .article__container table th {
+  color: var(--light);
+}
+.right-panel .article__container table td, .right-panel .article__container table th {
+  padding: 1rem;
+}
+.right-panel .article__3-rows {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}/*# sourceMappingURL=style.css.map */
